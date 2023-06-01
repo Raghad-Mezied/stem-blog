@@ -1,0 +1,29 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.children_wrapper {
+  padding: 18px 135px 0 135px;
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .children_wrapper {
+    padding-right: 18px 125px 0 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .children_wrapper {
+    padding: 18px 96px 0 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .children_wrapper {
+    padding: 18px 18px 0 18px;
+  }
+}

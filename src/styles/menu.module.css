@@ -1,0 +1,85 @@
+.wrapper {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.wrapper_closed {
+  background: transparent;
+  width: 0;
+}
+
+.wrapper_open {
+  background-color: var(--primary);
+  width: 100vw;
+}
+
+.btn {
+  height: 25px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 125px;
+  top: 12.5px;
+}
+
+.bar {
+  position: relative;
+  margin-top: 10px;
+}
+
+.bar,
+.bar::before,
+.bar::after {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bar::after {
+  top: 10px;
+}
+
+.toggle > .bar::before {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.toggle > .bar {
+  background: var(--primary);
+}
+
+.toggle > .bar::after {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.nav {
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    right: 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn {
+    right: 18px;
+  }
+}

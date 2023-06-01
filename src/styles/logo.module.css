@@ -1,0 +1,16 @@
+.wrapper {
+  width: 83px;
+  background-color: var(--primary);
+  flex-grow: 1;
+  padding: 18px 0;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+}

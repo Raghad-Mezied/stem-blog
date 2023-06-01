@@ -1,0 +1,76 @@
+.container {
+  background-color: #fff;
+  grid-column: 1 / 9;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+
+.science {
+  border-left: var(--purple) solid 5px;
+}
+
+.technology {
+  border-left: var(--red) solid 5px;
+}
+
+.engineering {
+  border-left: var(--blue) solid 5px;
+}
+
+.mathematics {
+  border-left: var(--primary) solid 5px;
+}
+
+.section {
+  display: flex;
+}
+
+.image {
+  width: 50%;
+}
+
+.container section {
+  height: 200px;
+}
+
+.wrapper {
+  width: 50%;
+  padding: 18px;
+}
+
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--primary);
+  margin-bottom: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  color: gray;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-column: 1 / 9;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    grid-column: 1 / 5;
+  }
+  .container section {
+    height: 120px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .date {
+    font-size: 12px;
+  }
+}
